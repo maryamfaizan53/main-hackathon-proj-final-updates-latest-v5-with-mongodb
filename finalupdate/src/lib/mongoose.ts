@@ -9,10 +9,10 @@ if (!global._mongoose) {
 
 export const dbConnect = global._mongoose // type is Promise<typeof mongoose> | undefined
 
-const userSchema = new mongoose.Schema({
-  email: { type: String, unique: true, required: true },
-  password: String,
-  // any other fields
-})
+// const userSchema = new mongoose.Schema({
+//   email: { type: String, unique: true, required: true },
+//   password: String,
+//   // any other fields
+// })
 
-export const UserModel = mongoose.models.User || mongoose.model('User', userSchema)
+// export const UserModel = mongoose.models.User || mongoose.model('User', userSchema)
